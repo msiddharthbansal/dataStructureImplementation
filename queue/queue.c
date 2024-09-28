@@ -1,7 +1,7 @@
 #include<stdio.h>
 #define N 10
 
-void insert(int queue[], int *f, int *r, int value)
+void enqueue(int queue[], int *f, int *r, int value)
 {
     if(*r >= N-1)
         printf("QUEUE IS FULL \n");
@@ -17,7 +17,7 @@ void insert(int queue[], int *f, int *r, int value)
     }
 }
 
-int delete(int queue[], int *f, int *r){
+int dequeue(int queue[], int *f, int *r){
     int v;
     if(*f == -1 && *r == -1)
     {
